@@ -16,9 +16,10 @@
     }
 
     table.layout img {
-      max-width: 140px; /* ⬆️ Made image slightly bigger */
+      max-width: 140px;
       height: auto;
       border-radius: 50%;
+      margin-right: 20px; /* 👈 Adds space between image and text */
     }
 
     .profile-text {
@@ -37,20 +38,25 @@
     .nav-links a {
       text-decoration: none;
       font-weight: bold;
+      color: #0066cc;
+    }
+
+    .nav-links a:hover {
+      text-decoration: underline;
     }
 
     ul.education {
       font-size: 18px;
-      line-height: 1.9; /* ⬆️ Increased line spacing */
+      line-height: 1.9;
       margin-top: 10px;
     }
 
     table.skills {
       width: 100%;
       font-size: 18px;
-      line-height: 1.8; /* ⬆️ More vertical spacing */
+      line-height: 1.8;
       border-collapse: separate;
-      border-spacing: 0 10px; /* ⬆️ Space between rows */
+      border-spacing: 0 10px;
     }
 
     th {
@@ -74,6 +80,11 @@
         flex-direction: column;
         align-items: center;
       }
+
+      table.layout img {
+        margin-right: 0; /* Remove side margin on small screens */
+        margin-bottom: 20px;
+      }
     }
   </style>
 </head>
@@ -88,12 +99,12 @@
         <h1>Jason Peprah</h1>
         <p class="profile-text">
           First-year Computer Engineering student at
-          <a href="https://www.knust.edu.gh/">Kwame Nkrumah University of Science and Technology</a>. Passionate about
-          leveraging technology to solve real-world problems and enhance lives. Possesses leadership
-          experience in both academic and voluntary settings, with a strong foundation in programming,
-          hardware design, and web development. Recognized for excellent collaboration, initiative,
-          and communication skills. Actively seeking opportunities to learn, contribute, and make
-          a meaningful impact through technology.
+          <a href="https://www.knust.edu.gh/">Kwame Nkrumah University of Science and Technology</a>.
+          Passionate about leveraging technology to solve real-world problems and enhance lives.
+          Possesses leadership experience in both academic and voluntary settings, with a strong foundation
+          in programming, hardware design, and web development. Recognized for excellent collaboration,
+          initiative, and communication skills. Actively seeking opportunities to learn, contribute, and
+          make a meaningful impact through technology.
         </p>
         <div class="nav-links">
           <a href="Day_41_Projects.html">PROJECTS</a>
@@ -117,7 +128,7 @@
     </li>
     <li style="margin-top: 15px;">
       <a href="https://en.wikipedia.org/wiki/Mfantsipim_School">Mfantsipim School</a> —
-      West African Secondary School Certificate Examination (WASSCE), Science Program.
+      West African Senior School Certificate Examination (WASSCE), Science Program.
       <br />
       Graduated: 2024
     </li>
