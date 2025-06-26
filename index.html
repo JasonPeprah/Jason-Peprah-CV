@@ -1,55 +1,126 @@
 <!doctype html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Jason Peprah</title>
-    </head>
-    <body>
-        <table cellspacing="20">
-            <tr>
-                <td><img src="Profile Picture-modified.png" alt="Jason Profile Picture"></td>
-                <td><h1>Jason Peprah</h1>
-        <p style="font-size: 18px; line-height: 1.8;">First-year Computer Engineering student at <a href="https://www.knust.edu.gh/">
-            Kwame Nkrumah University of Science and Technology.</a> Passionate about
-            leveraging technology to solve real-world problems and enhance lives. Possesses leadership
-            experience in both academic and voluntary settings, with a strong foundation in programming,
-            hardware design, and web development. Recognized for excellent collaboration, initiative,
-            and communication skills. Actively seeking opportunities to learn, contribute, and make
-            a meaningful impact through technology.</p>
-            <br>
-        <p>    <a href="Day_41_Projects.html"><strong>PROJECTS</strong></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        <a href="Day_41_Leadership Experience.html"><strong>LEADERSHIP &nbsp;&nbsp; EXPERIENCE</strong></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        <a href="Day_41_Professional Training.html"><strong>PROFESSIONAL &nbsp;&nbsp; TRAINING</strong></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <a href="Day_41_Contact-Me.html"><strong>CONTACT-ME</strong></a>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Jason Peprah</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+    }
 
-        </p></td>
-            </tr>
-        </table>
+    .container {
+      max-width: 900px;
+      margin: auto;
+    }
 
-        <hr>
+    .header {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 20px;
+    }
 
-        <h3>Education</h3>
-        <ul>
-            <li style="font-size: 18px;"><a href="https://www.knust.edu.gh/">Kwame Nkrumah University of Science and Technology (KNUST)</a> — BSc. Computer Engineering.</li>
-            <li>Expected Completion: September 2028.</li>
-            <li><br></li>
-            <li style="font-size: 18px;"><a href="https://en.wikipedia.org/wiki/Mfantsipim_School">Mfantsipim School</a> — West African Secondary School Certificate Examination (WASSCE), Science Program.</li>
-            <li>Graduated: 2024</li>
-        </ul>
+    .header img {
+      width: 130px;
+      height: auto;
+      border-radius: 50%;
+    }
 
-        <hr>
+    .nav-links {
+      margin-top: 15px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
 
-        <strong style="font-size: 18px;">Technical Skills</strong>
-        <br>
-        <br>
-        <table cellspacing="4">
-            <tr style="font-size: 17px;">
-            <th >Programming:</th> <td>&nbsp;&nbsp;Python,&nbsp;&nbsp;C/C++,&nbsp;&nbsp; Java,&nbsp;&nbsp; HTML/CSS</td></tr>
-            <tr style="font-size: 18px;"><th>Hardware & Systems:</th> <td>&nbsp;&nbsp;Circuit&nbsp;&nbsp;Design, &nbsp;&nbsp;Arduino</td></tr>
-            <tr style="font-size: 18px;"><th>Tools:</th> <td>&nbsp;&nbsp;Git, &nbsp;&nbsp;Photoshop</td></tr>
-            <tr style="font-size: 18px;"><th>Soft Skills:</th> <td>&nbsp;&nbsp;Team Collaboration, &nbsp;&nbsp;Leadership, &nbsp;&nbsp;Problem-Solving, &nbsp;&nbsp;Communication, &nbsp;&nbsp;Time Management.</td></tr>
-        </table>
-    </body>
+    .nav-links a {
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 16px;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    table {
+      width: 100%;
+    }
+
+    th {
+      text-align: left;
+      vertical-align: top;
+    }
+
+    @media (max-width: 600px) {
+      .nav-links {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <img src="Profile Picture-modified.png" alt="Jason Profile Picture">
+      <div>
+        <h1>Jason Peprah</h1>
+        <p style="font-size: 18px; line-height: 1.8;">
+          First-year Computer Engineering student at 
+          <a href="https://www.knust.edu.gh/">Kwame Nkrumah University of Science and Technology</a>. 
+          Passionate about leveraging technology to solve real-world problems and enhance lives. 
+          Possesses leadership experience in both academic and voluntary settings, with a strong 
+          foundation in programming, hardware design, and web development. Recognized for excellent 
+          collaboration, initiative, and communication skills. Actively seeking opportunities to learn, 
+          contribute, and make a meaningful impact through technology.
+        </p>
+        <div class="nav-links">
+          <a href="Day_41_Projects.html">PROJECTS</a>
+          <a href="Day_41_Leadership Experience.html">LEADERSHIP EXPERIENCE</a>
+          <a href="Day_41_Professional Training.html">PROFESSIONAL TRAINING</a>
+          <a href="Day_41_Contact-Me.html">CONTACT-ME</a>
+        </div>
+      </div>
+    </div>
+
+    <hr>
+
+    <h3>Education</h3>
+    <ul style="font-size: 18px;">
+      <li>
+        <a href="https://www.knust.edu.gh/">Kwame Nkrumah University of Science and Technology (KNUST)</a> — BSc. Computer Engineering.
+        <br>Expected Completion: September 2028.
+      </li>
+      <li>
+        <a href="https://en.wikipedia.org/wiki/Mfantsipim_School">Mfantsipim School</a> — West African Secondary School Certificate Examination (WASSCE), Science Program.
+        <br>Graduated: 2024
+      </li>
+    </ul>
+
+    <hr>
+
+    <strong style="font-size: 18px;">Technical Skills</strong><br><br>
+    <table cellspacing="4" style="font-size: 17px;">
+      <tr>
+        <th>Programming:</th>
+        <td>Python, C/C++, Java, HTML/CSS</td>
+      </tr>
+      <tr>
+        <th>Hardware & Systems:</th>
+        <td>Circuit Design, Arduino</td>
+      </tr>
+      <tr>
+        <th>Tools:</th>
+        <td>Git, Photoshop</td>
+      </tr>
+      <tr>
+        <th>Soft Skills:</th>
+        <td>Team Collaboration, Leadership, Problem-Solving, Communication, Time Management</td>
+      </tr>
+    </table>
+  </div>
+</body>
 </html>
-
