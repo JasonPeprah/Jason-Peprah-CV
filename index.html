@@ -16,7 +16,7 @@
     }
 
     table.layout img {
-      max-width: 100px;
+      max-width: 140px; /* ⬆️ Made image slightly bigger */
       height: auto;
       border-radius: 50%;
     }
@@ -37,6 +37,25 @@
     .nav-links a {
       text-decoration: none;
       font-weight: bold;
+    }
+
+    ul.education {
+      font-size: 18px;
+      line-height: 1.9; /* ⬆️ Increased line spacing */
+      margin-top: 10px;
+    }
+
+    table.skills {
+      width: 100%;
+      font-size: 18px;
+      line-height: 1.8; /* ⬆️ More vertical spacing */
+      border-collapse: separate;
+      border-spacing: 0 10px; /* ⬆️ Space between rows */
+    }
+
+    th {
+      text-align: left;
+      vertical-align: top;
     }
 
     @media (max-width: 600px) {
@@ -89,14 +108,14 @@
   <hr />
 
   <h3>Education</h3>
-  <ul style="font-size: 18px;">
+  <ul class="education">
     <li>
       <a href="https://www.knust.edu.gh/">Kwame Nkrumah University of Science and Technology (KNUST)</a> —
       BSc. Computer Engineering.
       <br />
       Expected Completion: September 2028.
     </li>
-    <li style="margin-top: 10px;">
+    <li style="margin-top: 15px;">
       <a href="https://en.wikipedia.org/wiki/Mfantsipim_School">Mfantsipim School</a> —
       West African Secondary School Certificate Examination (WASSCE), Science Program.
       <br />
@@ -108,7 +127,7 @@
 
   <strong style="font-size: 18px;">Technical Skills</strong>
   <br /><br />
-  <table cellspacing="4" style="font-size: 17px;">
+  <table class="skills">
     <tr>
       <th>Programming:</th>
       <td>Python, C/C++, Java, HTML/CSS</td>
